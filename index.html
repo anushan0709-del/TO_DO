@@ -2,28 +2,51 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>TO-DO-list</title>
+   <title>TO-DO List</title>
    <link rel="stylesheet" href="style2.css">
-
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <h1 class="logo">Anushan To-do</h1>
+
         <ul class="nav-links">
-            <li><a href="#"> Home</a></li>
-             <li><a href="#"> Task</a></li>
-               <li><a href="#"> About</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Task</a></li>
+            <li><a href="About.html">About</a></li>
         </ul>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <div class="container">
+
+        <h1>📅 Calendar & ⏰ Time</h1>
+
+        <!-- Time -->
+        <h2 id="time">Time loading...</h2>
+
+        <!-- Date -->
+        <h3 id="date"></h3>
+
+        <!-- Calendar -->
+        <input type="date">
+
+        <hr>
+
+        <!-- TASK -->
         <h2>To-Do List</h2>
+
         <input type="text" id="taskInput" placeholder="Add a task">
         <button onclick="addTask()">Add</button>
-        <ul id="tasklist"></ul>
+
+        <!-- FIXED ID -->
+        <ul id="taskList"></ul>
 
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>

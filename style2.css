@@ -1,51 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
-    display: flex; /* layout: navbar + content */
+    display: flex;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
 }
 
-/* ===== NAVBAR (LEFT SIDEBAR) ===== */
+/* ===== NAVBAR ===== */
 .navbar {
     width: 220px;
+    height: 100vh;
     background: #000080;
     color: white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    height: 100vh;
+    position: fixed;
+}
+
+.logo {
+    margin-bottom: 20px;
 }
 
 .nav-links {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .nav-links a {
-    color: rgb(83, 8, 8);
+    color: rgb(219, 65, 65);
     text-decoration: none;
     font-weight: bold;
 }
 
 .nav-links a:hover {
     color: #00bcd4;
+    transform: translateX(5px);
+    transition: 0.2s;
 }
 
+/* ===== MAIN CONTENT ===== */
 .container {
-    flex: 1;             
-    background: #f4f4f4;
-    padding: 20px;
-    box-sizing: border-box;
+    margin-left: 240px;
+    padding: 30px;
+    flex: 1;
 }
 
+/* TIME */
+#time {
+    font-size: 40px;
+    color: #000080;
+}
 
+/* DATE */
+#date {
+    margin-bottom: 20px;
+}
+
+/* INPUT */
 input {
-    width: 70%;
     padding: 8px;
+    width: 200px;
 }
 
 button {
@@ -53,18 +70,18 @@ button {
     cursor: pointer;
 }
 
+/* TASK LIST */
 ul {
     list-style: none;
     padding: 0;
 }
 
 li {
-    padding: 8px;
+    background: white;
     margin-top: 5px;
-    background: #eee;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
-    border-radius: 5px;
 }
 
 li.complete {
