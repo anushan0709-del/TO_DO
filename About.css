@@ -5,7 +5,7 @@ body {
     background: #f4f4f4;
 }
 
-/* ===== SIDEBAR NAVBAR ===== */
+
 .navbar {
     width: 240px;
     height: 100vh;
@@ -42,34 +42,31 @@ body {
     transition: all 0.3s ease;
 }
 
-/* hover effect like button */
+
 .nav-links a:hover {
     background: #00bcd4;
     color: black;
     transform: translateX(6px);
 }
 
-/* ===== MAIN CONTENT ===== */
+
 .container {
     margin-left: 260px;
     padding: 40px;
     flex: 1;
 }
 
-/* TIME */
 #time {
     font-size: 48px;
     color: #000080;
     font-weight: bold;
 }
 
-/* DATE */
 #date {
     margin-bottom: 25px;
     color: #444;
 }
 
-/* INPUT */
 input {
     padding: 10px;
     width: 220px;
@@ -93,7 +90,7 @@ button:hover {
     color: black;
 }
 
-/* TASK LIST */
+
 ul {
     list-style: none;
     padding: 0;
@@ -110,13 +107,13 @@ li {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* completed task */
+
 li.complete {
     text-decoration: line-through;
     opacity: 0.6;
 }
 
-/* delete button */
+
 .delete {
     color: red;
     cursor: pointer;

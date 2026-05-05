@@ -2,51 +2,56 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <meta name="viewport"
+   content="width=device-width,initial-scale=1.0">
    <title>TO-DO List</title>
    <link rel="stylesheet" href="style2.css">
+   <libk rel="stylesheet" href="mediaquieries.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    
     <nav class="navbar">
         <h1 class="logo">Anushan To-do</h1>
 
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Task</a></li>
             <li><a href="About.html">About</a></li>
         </ul>
     </nav>
+            <div class="filters">
+    <button onclick="showAll()">All</button>
+    <button onclick="showPending()">Pending</button>
+    <button onclick="showCompleted()">Completed</button>
+<div class="container">
 
-    <!-- MAIN CONTENT -->
-    <div class="container">
 
-        <h1>📅 Calendar & ⏰ Time</h1>
+    <h2 id="time">Time loading...</h2>
 
-        <!-- Time -->
-        <h2 id="time">Time loading...</h2>
 
-        <!-- Date -->
-        <h3 id="date"></h3>
+    <h3 id="date"></h3>
 
-        <!-- Calendar -->
-        <input type="date">
+    <hr>
 
-        <hr>
 
-        <!-- TASK -->
-        <h2>To-Do List</h2>
+    <h2>To-Do List</h2>
 
-        <input type="text" id="taskInput" placeholder="Add a task">
-        <button onclick="addTask()">Add</button>
+    <input type="text" id="taskInput" placeholder="Add a task">
+    <button onclick="addTask()">Add</button>
 
-        <!-- FIXED ID -->
-        <ul id="taskList"></ul>
-
+    <div class="filters">
+        <button onclick="showAll()">All</button>
+        <button onclick="showPending()">Pending</button>
+        <button onclick="showCompleted()">Completed</button>
     </div>
 
+    <ul id="taskList"></ul>
+
+</div>
+
     <script src="script.js"></script>
+    <script src="dateandtime.js"></script>
 
 </body>
 </html>

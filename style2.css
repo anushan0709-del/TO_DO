@@ -1,20 +1,21 @@
+
 body {
     margin: 0;
-    display: flex;
     font-family: Arial, sans-serif;
     background: #f4f4f4;
+    display: flex;
 }
 
-/* ===== NAVBAR ===== */
+
 .navbar {
     width: 220px;
     height: 100vh;
     background: #000080;
     color: white;
     padding: 20px;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    position: fixed;
 }
 
 .logo {
@@ -30,47 +31,41 @@ body {
 }
 
 .nav-links a {
-    color: rgb(219, 65, 65);
+    color: rgb(211, 69, 69);
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 .nav-links a:hover {
     color: #00bcd4;
     transform: translateX(5px);
-    transition: 0.2s;
 }
 
-/* ===== MAIN CONTENT ===== */
+
 .container {
     margin-left: 240px;
     padding: 30px;
     flex: 1;
 }
 
-/* TIME */
-#time {
-    font-size: 40px;
-    color: #000080;
-}
 
-/* DATE */
-#date {
-    margin-bottom: 20px;
-}
-
-/* INPUT */
-input {
+input, button {
     padding: 8px;
-    width: 200px;
+    margin: 5px 0;
+}
+input {
+    width: 1000px;
+
+}
+textarea{align-content:center;
 }
 
 button {
-    padding: 8px;
     cursor: pointer;
 }
 
-/* TASK LIST */
+
 ul {
     list-style: none;
     padding: 0;
@@ -82,13 +77,18 @@ li {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-li.complete {
+
+.complete {
     text-decoration: line-through;
+    color: gray;
 }
+
 
 .delete {
     color: red;
     cursor: pointer;
+    margin-left: 10px;
 }
